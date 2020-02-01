@@ -22,7 +22,7 @@
     "extends": "react-app"
   },
   "proxy": {
-    "/*": {
+    "*": {
       "target": "http://localhost:5000"
     },
     "/detail/*": {
