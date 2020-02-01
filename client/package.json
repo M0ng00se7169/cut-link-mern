@@ -25,6 +25,12 @@
     "/*": {
       "target": "http://localhost:5000"
     },
+    "/detail/*": {
+      "target": "http://localhost:5000"
+    },
+    "/create/*": {
+      "target": "http://localhost:5000"
+    }
   },
   "browserslist": {
     "production": [
