@@ -10,6 +10,10 @@ router.post('/generate', auth, async (req, res) => {
     const baseUrl = keys.baseUrl
     const { from } = req.body
 
+    if (from.charAt(from.length - 1) === '/') {
+      from = from.substring(0, from.length - 1)      
+    }
+
     const code = shortid.generate()
 
     const existing = await Link.findOne({ from })
