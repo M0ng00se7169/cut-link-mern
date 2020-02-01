@@ -21,7 +21,14 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "https://cut-link-app.herokuapp.com:5000/",
+  "proxy": {
+    "/*": {
+      "target": "http://localhost:5000"
+    },
+    "/detail/*": {
+      "target": "http://localhost:5000"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
