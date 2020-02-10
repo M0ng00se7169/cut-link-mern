@@ -1,19 +1,38 @@
 @import '~materialize-css/dist/css/materialize.min.css';
 
+body {
+  background: rgba(207, 209, 218, 0.795);
+}
+
 input.yellow-input {
   border-bottom: 1px solid #fff !important;
   box-shadow: 0 1px 0 0 #fff !important;
 }
 
-input.yellow-input + label{
+input.yellow-input + label {
   color: #ffffff !important;
 }
 
-input.yellow-input:focus + label{
+input.yellow-input:focus + label {
   color: #ffeb3b !important;
 }
 
 input.yellow-input:focus {
   border-bottom: 1px solid #ffeb3b !important;
   box-shadow: 0 1px 0 0 #ffeb3b !important;
+}
+
+h1 {
+  font-size: 2.9rem;
+  text-align: center;
+  margin: 2.8rem 0 5.68rem 0;
+}
+
+.container {
+  width: 50%;
+  min-width: 300px;
+}
+
+label.active {
+  color: rgba(56, 56, 50, 0.932);
 }

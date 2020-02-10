@@ -46,7 +46,7 @@ export const AuthPage = () => {
 
   return (
     <div className="row">
-      <div className="col s6 offset-s3">
+      <div className="col s12">
         <h1>Cut The Link</h1>
         <div className="card blue darken-1">
           <div className="card-content white-text">

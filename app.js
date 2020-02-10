@@ -36,6 +36,3 @@ async function start() {
 
 
 start()
-
-
-
