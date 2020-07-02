@@ -29,7 +29,7 @@
       "target": "http://localhost:5000"
     },
     "/create/*": {
-      "target": 
+      "target": "http://localhost:5000"
     }
   },
   "browserslist": {
