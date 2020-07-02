@@ -1,4 +1,5 @@
-Cut The Link [![License](https://img.shields.io/badge/licence-MIT-blue)](https://choosealicense.com/licenses/mit/) [![Status](https://img.shields.io/badge/status-work--in--progress-yellow)](https://github.com/M0ng00se7169/Tetris)
+# 🎯 Cut The Link [![License](https://img.shields.io/badge/licence-MIT-blue)](https://choosealicense.com/licenses/mit/) [![Status](https://img.shields.io/badge/status-work--in--progress-yellow)](https://github.com/M0ng00se7169/Tetris)
+
 ✂️ Cut The Link MERN Application with JWT authentication 
 (using MongoDB, Express, React and Node.js) 
 
@@ -40,7 +41,7 @@ To:
 
 :three: In `config/` create `development.js`
 
-:four: 
+:four:  In `development.js` add this:
 ```bash
 module.exports = {
   port: 5000,
