@@ -2,6 +2,7 @@ const express = require('express')
 const keys = require('./config/keys')
 const mongoose = require('mongoose')
 const path = require('path')
+const compression = require('compression')
 
 const app = express()
 
@@ -10,6 +11,8 @@ app.use(express.json({ extended: true }))
 app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/link', require('./routes/link.routes'))
 app.use('/t', require('./routes/redirect.routes'))
+
+app.use(compression())
 
 if (process.env.NODE_ENV === 'production') {
   app.use('/', express.static(path.join(__dirname, 'client', 'build')))

@@ -36,3 +36,8 @@ h1 {
 label.active {
   color: rgba(56, 56, 50, 0.932);
 }
+
+button.btn-primary {
+  float: right;
+  margin-top: 30px;
+}
