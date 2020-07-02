@@ -10,12 +10,19 @@ export const Navbar = () => {
     event.preventDefault();
     auth.logout();
     history.push("/");
+    window.location.reload(false)
   };
 
   return (
-    <nav>
-      <div className="nav-wrapper blue darken-1" style={{ padding: "0 2rem" }}>
-        <div className="container">
+    <>
+      <nav>
+        <div
+          className="nav-wrapper blue darken-1"
+          style={{ padding: "0 2rem" }}
+        >
+          <a href="/" data-target="slide-out" className="sidenav-trigger show-on-small">
+            <i className="material-icons">menu</i>
+          </a>
           <span className="brand-logo">Cut Links</span>
           <ul className="right hide-on-med-and-down">
             <li>
@@ -31,7 +38,24 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      <ul id="slide-out" className="sidenav">
+        <li>
+          <NavLink to="/create">Create</NavLink>
+        </li>
+        <li>
+          <NavLink to="/links">Links</NavLink>
+        </li>
+        <li>
+          <div className="divider"></div>
+        </li>
+        <li>
+          <NavLink to="/" onClick={logoutHandler}>
+            Logout
+          </NavLink>
+        </li>
+      </ul>
+    </>
   );
 };
