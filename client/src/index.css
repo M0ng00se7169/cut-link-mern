@@ -45,3 +45,11 @@ button.btn-primary {
 ul.sidenav {
   max-width: 25%;
 }
+
+td {
+  word-break: break-word;
+}
+
+td.indeks {
+  word-break: normal;
+}

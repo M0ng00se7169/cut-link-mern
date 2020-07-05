@@ -21,7 +21,7 @@ export const LinksList = ({ links }) => {
         {links.map((link, index) => {
           return (
             <tr key={link._id}>
-              <td>{index + 1}</td>
+              <td className="indeks">{index + 1}</td>
               <td>{link.from}</td>
               <td>{link.to}</td>
               <td>
