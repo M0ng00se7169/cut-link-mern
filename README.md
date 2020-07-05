@@ -67,4 +67,4 @@ https://cut-link-app.herokuapp.com/
 
 
 <br/><br/>
-Feel free to contact with me. And hope you enjoy the game 😎
+Feel free to contact with me. And hope you enjoy this useful web app 😎
